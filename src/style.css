@@ -1,0 +1,468 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: #7b0a0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+}
+
+#header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#header img {
+    width: 40px;
+}
+
+#headerSubTitle {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#headerTitle {
+    display: flex;
+    align-items: center;
+}
+
+#headerTitle img {
+    margin-right: 5px;
+}
+
+#menu {
+    background-color: #080e68;
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+#home li {
+    width: 100%;
+    margin-top: 5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#home img {
+    margin-right: 6px;
+    width: 25px;
+}
+
+#menu img {
+    filter: invert(100%) sepia(96%) saturate(15%) hue-rotate(212deg) brightness(104%) contrast(104%);
+}
+
+#home p {
+    margin: 0;
+}
+
+#homeElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+#homeElements li {
+    width: 80%;
+    cursor: pointer;
+}
+
+#menu h4 {
+    margin-top: 20px;
+    padding: 0;
+}
+
+#content {
+    background-color: rgb(255, 255, 255);
+}
+
+#project {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#project h4 {
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+#project button {
+    width: 75%;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7b0a0f;
+    border-radius: 15px;
+    align-self: center;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+
+#project button:hover {
+    border: 3px #5694b3 solid;
+}
+
+#content {
+    padding: 30px;
+    background-color: #5694b3;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contentScreen {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 12px;
+}
+
+.buttonDiv {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.todoButton {
+    font-size: 40px;
+    border: 0;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #5694b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonDiv form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: #7b0a0f solid 3px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.buttonDiv form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+}
+
+.buttonDiv form .formController {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+textarea {
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+    height: 60px;
+}
+
+.buttonDiv form .priorityDiv, .buttonDiv form .dateDiv {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.validerBoutton {
+    color: white;
+    background-color: green;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 7px;
+    border: 0;
+    cursor: pointer;
+}
+
+.annulerBoutton {
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 7px;
+    border: 0;
+    cursor: pointer;
+}
+
+.dateInput {
+    width: 100%;
+}
+
+select {
+    background-color: #5694b3;
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#project form {
+    background-color: white;
+    color: #080e68;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px;
+    gap: 4px;
+}
+
+#project form div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+}
+
+#project form .formProjectController {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#project form .validerProjetBoutton {
+    color: white;
+    background-color: green;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 7px;
+    border: 0;
+    cursor: pointer;
+}
+
+#project form .annulerProjetBoutton {
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 7px;
+    border: 0;
+    cursor: pointer;
+}
+
+#project form .nameInput, #project form label {
+    font-size: 20px;
+}
+
+#projectList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    list-style-type: none;
+    cursor: pointer;
+    gap: 5px;
+}
+
+#projectList li {
+    width: 80%;
+    font-size: 30px;
+}
+
+.selected {
+    background-color: #5694b3;
+    color: white;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+.todoCard {
+    border-radius: 12px;
+    border: 5px solid #5694b3;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background-color: white;
+    color: black;
+}
+
+.todoCard h3 {
+    padding: 10px;
+    margin: 0;
+    font-size: 40px;
+}
+
+.todoPrioDate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+.todoPrioDate img {
+    height: 40px;
+    filter: invert(25%) sepia(76%) saturate(3310%) hue-rotate(334deg) brightness(82%) contrast(112%);
+}
+
+.prioDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3px;
+    align-items: center;
+    background-color: #CCCCFF;
+    padding: 3px;
+    color: black;
+    font-weight: bold;
+}
+
+.prioDiv p {
+    padding-right: 10px;
+}
+
+.todoDescription {
+    width: 85%;
+    height: 150px;
+    overflow: scroll;
+    background-color: #CCCCFF;
+    padding: 10px;
+    text-align: justify;
+    border-radius: 12px;
+    color: black;
+}
+
+.iconHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: auto;
+    align-self: flex-end;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    gap: 5px;
+    background-color: white;
+}
+
+.iconHolder img {
+    width: 50px;
+}
+
+.todoValidate {
+    cursor: pointer;
+}
+
+.todoDelete {
+    cursor: pointer;
+}
+
+.todoValidate:hover {
+    filter: invert(56%) sepia(82%) saturate(454%) hue-rotate(71deg) brightness(97%) contrast(96%);
+}
+
+.todoDelete:hover {
+    filter: invert(25%) sepia(76%) saturate(3310%) hue-rotate(334deg) brightness(82%) contrast(112%);
+}
+
+.low {
+    background-color: #40E0D0;
+}
+
+.medium {
+    background-color: orange;
+}
+
+.high {
+    background-color: red;
+}
+
+.high img {
+    filter: none;
+}
+
+.dueDate {
+    font-style: italic;
+}
+
+.completed {
+    border: 5px solid black;
+    background-color: green;
+    color: white;
+}
+
+.completed .iconHolder {
+    background-color: green;
+}
+
+.completed .iconHolder img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.completed .todoValidate:hover {
+    filter: invert(56%) sepia(82%) saturate(454%) hue-rotate(71deg) brightness(97%) contrast(96%);
+}
+
+.completed .todoDelete:hover {
+    filter: invert(25%) sepia(76%) saturate(3310%) hue-rotate(334deg) brightness(82%) contrast(112%);
+}
+
+.completed .todoDescription {
+    width: 85%;
+    height: 150px;
+    overflow: scroll;
+    background-color: orange;
+    padding: 10px;
+    text-align: justify;
+    border-radius: 12px;
+    color: black;
+}
